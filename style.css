@@ -1,0 +1,187 @@
+*{
+    font-family: 'League Spartan', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(222, 26%, 31%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.screen{
+    background-color: hsl(224, 36%, 15%);
+    padding: 1rem 1.5rem;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+.calc-buttons{
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.calc-button{
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 3px hsl(28, 16%, 65%);
+    cursor: pointer;
+    font-size: 32px;
+}
+.calc-button:hover{
+    background-color: hsl(0, 0%, 100%);
+}
+.del{
+    background-color: #65739A;
+    box-shadow: 1px 3px hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+.reset{
+    flex-basis: 47%;
+    background-color: #65739A;
+    box-shadow: 1px 3px hsl(224, 28%, 35%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+.reset:hover, .del:hover{
+    background-color: hsl(225, 29%, 59%);
+}
+.equal{
+    flex-basis: 47%;
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 1px 3px hsl(6, 70%, 34%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+}
+.equal:hover{
+    background-color: hsl(6, 95%, 60%);
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 100%);
+}
+.slider{ 
+    width: 55px;
+    appearance: none;
+    background-color: hsl(223, 31%, 20%);
+    padding: 5px;
+    border-radius: 25px;
+    margin: 0;
+    cursor: pointer;
+}
+.theme-slider p{
+    margin: 0;
+    padding-left: 3.4rem;
+    font-size: 0.7rem;
+}
+.theme-slider span{
+    padding: 0.4rem;
+}
+.theme-slider label{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* theme 2 */
+
+.theme2{
+    background-color: hsl(0, 0%, 90%);
+
+    .screen{
+        background-color: hsl(0, 0%, 93%);
+        color: hsl(60, 10%, 19%);
+    }
+    .calc-buttons, .slider{
+        background-color: hsl(0, 5%, 81%);
+    }
+    .top{
+        color: hsl(60, 10%, 19%);
+    }
+    .calc-button{
+        background-color: hsl(45, 7%, 89%);
+    }
+    .calc-button:hover{
+        background-color: hsl(0, 0%, 100%);
+    }
+    .del, .reset{
+        background-color: hsl(185, 42%, 37%);
+    }
+    .reset:hover, .del:hover{
+        background-color: hsl(225, 29%, 59%);
+    }
+    .equal{
+        background-color: hsl(6, 63%, 50%);
+    }
+    .equal:hover{
+        background-color: hsl(6, 95%, 60%);
+    }
+}
+
+/* theme 3 */
+
+.theme3{
+    background-color: hsl(268, 75%, 9%);
+    
+    .screen, .calc-buttons, .slider{
+        background-color: hsl(268, 71%, 12%);
+        color: hsl(52, 100%, 62%);
+    }
+    .calc-button{
+        background-color: hsl(268, 47%, 21%);
+        box-shadow: 0 3px hsl(290, 70%, 36%);
+        color: hsl(52, 100%, 62%);
+    }
+    .calc-button:hover{
+        background-color: hsl(268, 60%, 31%);
+    }
+    .reset, .del{
+        background-color: hsl(281, 89%, 26%);
+        box-shadow: 0 3px hsl(285, 91%, 52%);
+    }
+    .reset:hover, .del:hover{
+        background-color: hsl(281, 99%, 56%);
+    }
+    .equal{
+        background-color: hsl(176, 100%, 44%);
+        box-shadow: 0 3px hsl(177, 92%, 70%);
+    }
+    .equal:hover{
+        background-color: hsl(176, 70%,74%);
+    }
+    .top{
+        color: hsl(52, 100%, 62%);
+    }
+}
