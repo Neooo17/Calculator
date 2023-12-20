@@ -49,7 +49,7 @@ slider.addEventListener("input", function () {
         body.classList.remove("theme2");
         body.classList.remove("theme3");
     }
-})
+});
 
 
 
